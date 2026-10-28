@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6f1e8;
+  --ink: #14222b;
+  --teal: #0b3a4a;
+  --gold: #a6843d;
+  --line: #e4d9c8;
+  --muted: #5c6b73;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  background:
+    radial-gradient(1200px 400px at 10% -10%, rgba(11, 58, 74, 0.06), transparent 50%),
+    var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: #d7e4ea;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
